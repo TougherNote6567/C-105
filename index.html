@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Identification of Objects</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <center>
+        <h1 id="Header">Identification of Images of Objects
+            <sup></sup>
+        </h1>
+        <br><br>
+        <h3>This model is trained for indentifying the following objects:
+            <b>
+                <br><br>
+                Happy Face
+                <hr>
+                Rubik's Cube
+                <hr>
+                Book
+                <hr>
+                Geometry Box
+                <hr>
+                Paint Bottle
+                <hr>
+                Bowl
+                <br>
+                <br>
+            </b>
+        </h3>
+        <h4>Web Camera View</h4>
+        <div id="cam"></div>
+
+        <br>
+        <br>
+
+        <div id="output"></div>
+
+        <br>
+        <br>
+
+        <button class="btn btn-primary" onclick="pic()">Take Picture of Object</button>
+        <br>
+
+        <button class="btn btn-warning" onclick="identify()">Identify Object in Picture</button>
+        <br>
+
+        <h5>Object:
+            <span id="displayObject"></span>
+        </h5>
+
+        <h5>Accuracy:
+            <span id="displayAccuracy"></span>
+        </h5>
+    </center>
+    
+        <script src="main.js"></script>
+    </body>
+</html>

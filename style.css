@@ -1,0 +1,12 @@
+body{
+    background-color: darkseagreen;
+    text-align : center;
+    font-family: 'NTR', sans-serif;
+    color:darkorchid;
+}
+#Header{
+    width:80%;
+    height:10%;
+    background-color:crimson;
+    color:darkseagreen;
+}
